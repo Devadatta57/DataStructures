@@ -1,0 +1,8 @@
+package ArraysPrograms;
+
+public class UpdateELementAllOcuurences {
+	public static void main(String[] args) {
+
+	}
+
+}

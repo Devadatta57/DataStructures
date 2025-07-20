@@ -1,0 +1,19 @@
+package ArrayPrograms2;
+
+class Insert{
+	public static int[]  insertAtPos(int[] b,int j,int key) {
+		
+	}
+}
+public class insertingEleAtPos {
+	public static void main(String[] args) {
+		int[] a=new int[6] ;
+				a= new int[]{12,34,23,15,77};
+		
+		int[] b=new int[10];
+		
+		Insert.insertAtPos(a,434,2);
+		
+
+	}
+}

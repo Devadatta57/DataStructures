@@ -1,0 +1,19 @@
+package com.recursion;
+
+class lcmcalc{
+	public static int dolcm(int n1,int n2) {
+		int i=2;
+		if(n1%i==0 && n2%i==0) {
+			return i;
+		}
+		else {
+			i++;
+			return dolcm(n1,n2);
+		}
+	}
+}
+public class LCM {
+	public static void main(String[] args) {
+		
+	}
+}

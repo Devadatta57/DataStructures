@@ -1,0 +1,33 @@
+package ArraysProgramsSearching;
+
+import java.util.Arrays;
+
+class BinaryRec{
+	public static int binary(int[] a,int low,int high,int key){
+	
+		while(low<=high) {
+			int mid=(low+high)/2;
+		if(a[mid]==key) {
+			return mid;
+		}
+		else if(a[mid]<key){
+			return binary(a,mid+1, high,key);
+		}
+		else {
+			return binary(a, low,mid-1,key);
+		}
+		
+		}
+		return -1;
+	} 
+}
+public class BinarySearchRecursion {
+	public static void main(String[] args) {
+	int[] a=new int[7];
+	a=new int[] {12,32,54,43,23,67};
+	
+       Arrays.sort(a);
+      System.out.println(BinaryRec.binary(a,0,a.length-1,54));
+	
+	}
+}

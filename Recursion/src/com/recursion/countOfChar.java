@@ -1,0 +1,26 @@
+package com.recursion;
+
+class Countchar{
+	public static int countCh(String s,int index) {
+		if(index<0) {
+			return 0;
+		}
+		if(s.charAt(index)=='b') {
+			return 1+countCh(s,index-1);
+		}
+		else {
+			return countCh(s, index-1);
+		}
+	}
+}
+public class countOfChar {
+
+	public static void main(String[] args) {
+		String s="abbcd";
+		int res=Countchar.countCh(s,s.length()-1);
+		System.out.println(res);
+
+
+	}
+
+}

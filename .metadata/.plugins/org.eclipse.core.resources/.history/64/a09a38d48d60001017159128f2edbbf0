@@ -1,0 +1,24 @@
+package com.recursion;
+
+class SameCharStar{
+	static int index=0;
+	public static String newS(String s) {
+		if(s==null ||s.length()<=1) {
+			return s;
+		}
+		else {
+			if(s.charAt(index)==s.charAt(index+1)) {
+				return s.charAt(index)+"*"+ newS(s.substring(1));
+			}
+			else {
+				return s.charAt(0)+newS(s.substring(1));
+			}
+		}
+	}
+}
+public class AdjSameCharSepbyStar {
+	public static void main(String[] args) {
+	 System.out.println(SameCharStar.newS("abbd"));
+
+	}
+}

@@ -1,0 +1,32 @@
+package ArrayPrograms2;
+
+class Insertv2{
+	public static int[]  insertAtPos(int[] a,int location,int key) {
+		int[] b=new int[a.length+1];
+		int index=0;
+		for(int i=0;i<location;i++) {
+				b[index++]=a[i];
+		}
+		b[index++]=key;
+		for(int j=location;j<a.length;j++) {
+			b[index++]=a[j];
+		}
+		
+		return b;
+	}
+}
+public class insertingEleAtPosV2 {
+	public static void main(String[] args) {
+		int[] a=new int[6] ;
+				a= new int[]{12,34,23,15,77};
+		
+	
+		
+		int[] c=Insertv2.insertAtPos(a,3,245);
+		for(int i=0;i<c.length;i++) {
+			System.out.print(c[i]+" ");
+		}
+		
+
+	}
+}

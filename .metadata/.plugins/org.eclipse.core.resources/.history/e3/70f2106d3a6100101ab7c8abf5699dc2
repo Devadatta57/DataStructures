@@ -1,0 +1,20 @@
+package com.recursion;
+class ReplaceStr{
+	public static String replaceS(String s,int index) {
+		if(index<1) {
+			return s;
+		}
+		if(s.substring(index-1,index+1)=="pi"){
+			return replaceS(s, index-2)+"3.14";
+		}
+		else {
+			return replaceS(s, index-1)+s.charAt(0);
+		}
+	}
+}
+public class ReplaceString {
+	public static void main(String[] args) {
+		String s="pi pix";
+		System.out.println(ReplaceStr.replaceS(s,s.length()-1));
+	}
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.recursion.RemSpecChar"/>
+    <fullyQualifiedTypeName name="com.recursion.Parenthesis"/>
+    <fullyQualifiedTypeName name="com.recursion.CountEachCha"/>
+    <fullyQualifiedTypeName name="com.recursion.SubStringContainsWord"/>
+    <fullyQualifiedTypeName name="com.recursion.SubStringW"/>
+    <fullyQualifiedTypeName name="com.recursion.ReplaceChar"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="ReadAndWrite"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.SumE"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.SumPosNeg"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.SumFactorial"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.MinMax"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.AllOcurrence"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.FirstOcurrence"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.ArraySorti"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.ArraySortDesc"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.ArraySortString"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.ArraySortingString"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.ArraySortHalf"/>
+    <fullyQualifiedTypeName name="ArraysPrograms.ArraySHAdj"/>
+    <fullyQualifiedTypeName name="ArrayPrograms2.ArrayComp"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="ArrayPrograms2.ArrayDE"/>
+    <fullyQualifiedTypeName name="ArrayPrograms2.UpdateE"/>
+    <fullyQualifiedTypeName name="ArrayPrograms2.UpdateEle"/>
+    <fullyQualifiedTypeName name="matrixPrograms.Matrix1"/>
+    <fullyQualifiedTypeName name="matrixPrograms.Matrix"/>
+    <fullyQualifiedTypeName name="matrixPrograms.MatrixSum"/>
+    <fullyQualifiedTypeName name="matrixPrograms.MatrixRowSum"/>
+    <fullyQualifiedTypeName name="matrixPrograms.Transpose"/>
+    <fullyQualifiedTypeName name="matrixPrograms.Identity"/>
+    <fullyQualifiedTypeName name="matrixPrograms.SwappingTwoRows"/>
+    <fullyQualifiedTypeName name="matrixPrograms.SwapTwo"/>
+    <fullyQualifiedTypeName name="matrixPrograms.DiagonalSum"/>
+    <fullyQualifiedTypeName name="matrixPrograms.OppDiagonalInterchange"/>
+</qualifiedTypeNameHistroy>

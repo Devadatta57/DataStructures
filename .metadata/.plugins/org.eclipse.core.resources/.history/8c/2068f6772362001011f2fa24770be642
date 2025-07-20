@@ -1,0 +1,28 @@
+package ArraysPrograms;
+import java.util.Scanner;
+
+class SumOfOdd{
+	public static void read(int[] a) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter element: ");
+		for(int i=0;i<a.length;i++) {
+			a[i]=sc.nextInt();
+		}
+	}
+	public static int sumOdd(int[] a) {
+		int sum=0;
+		for(int i=1;i<a.length;i=i+2) {
+			System.out.println(i);
+			sum=sum+a[i];
+		}
+		return sum;
+	}
+}
+public class SumOfOddElements {
+	public static void main(String[] args) {
+		int a[]=new int[5];
+		SumOfOdd.read(a);
+		System.out.println("sum is "+SumOfOdd.sumOdd(a));
+
+	}
+}

@@ -1,0 +1,50 @@
+package ArrayPrograms2;
+
+import java.util.Scanner;
+
+class UpdateElem{
+	public static int[] updateElem(int[] a,int ele,int y) {
+		int b[]=new int[a.length];
+		int count=0;
+		for(int i=0;i<a.length;i++) {
+		           if(a[i]==ele && count<=1) {
+		    	         b[i]=y;
+		    	         count=count+1;
+		           }
+		            else {
+		    	      b[i]=a[i];
+		              }
+		      
+		}
+		return b;
+	}
+	public static int foundC(int[] a,int ele) {
+		int count=0;
+		for(int i=0;i<a.length;i++) {
+			if(a[i]==ele)
+				count=count+1;
+		}
+		return count;
+	}
+}
+public class UpdatingEleBasOnELeOnlyOneOcc {
+	public static void main(String[] args) {
+		int[] a= {12,12,232,431,4};
+
+		   Scanner sc=new Scanner(System.in);
+		   System.out.println("Enter ele");
+		   int ele=sc.nextInt();
+		   
+		   int count=UpdateElem.foundC(a,ele);
+		   if(count>0) {
+		    int[] c=UpdateElem.updateElem(a, ele,89);
+		    for(int i=0;i<a.length;i++) {
+				System.out.print(c[i]+" ");
+			}
+		   }
+		   else{
+			  System.out.println("not found");
+		   }
+		
+	}
+}

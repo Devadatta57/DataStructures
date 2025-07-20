@@ -1,0 +1,19 @@
+package ArraysPrograms;
+
+import java.util.Arrays;
+
+class ArraySortString{
+
+	public static void sortAsc(String[] s) {
+	   Arrays.sort(s);
+	}
+}
+public class ArraySortingString {
+	public static void main(String[] args) {
+    String[] s=new String[5];
+    s=new String[] {"deva","datta","ch"};
+      ArraySortString.sortAsc(s);
+    
+     
+	}
+}

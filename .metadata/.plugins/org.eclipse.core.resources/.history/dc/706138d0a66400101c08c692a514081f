@@ -1,0 +1,65 @@
+package matrixPrograms;
+
+import java.util.Scanner;
+
+class Matrix{
+	public static void MatrixRead(int sizer1,int sizec1,int sizer2,int sizec2) {
+		int[][] a=new int[sizer1][sizec1];
+		int[][] b=new int[sizer2][sizec2];
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter matrix a:");
+		
+		for(int i=0;i<sizer1;i++) {
+			for(int j=0;j<sizec1;j++) {
+				System.out.println("Enter : "+i+j);
+				a[i][j]=sc.nextInt();
+			}
+		}
+		
+         System.out.println("Enter b matrix:");
+		
+		for(int i=0;i<sizer2;i++) {
+			for(int j=0;j<sizec2;j++) {
+				System.out.println("Enter :"+b[i][j]);
+				b[i][j]=sc.nextInt();
+			}
+		}
+			
+		MatrixWrite(a, b);
+	}
+	
+	public static void  MatrixWrite(int[][] a,int[][] b){
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length;j++) {
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+		System.out.println();
+
+		for(int i=0;i<b.length;i++) {
+			for(int j=0;j<b[i].length;j++) {
+				System.out.print(b[i][j]+" ");
+			}
+			System.out.println();
+		}
+	
+	}
+	
+}
+public class MatrixReadAndWrite {
+	public static void main(String[] args) {
+      int sizer1=3;
+      int sizec1=3;
+      
+      int sizer2=3;
+      int sizec2=3;
+      
+      Matrix.MatrixRead(sizer1, sizec1, sizer2, sizec2);
+      
+		
+	}
+}

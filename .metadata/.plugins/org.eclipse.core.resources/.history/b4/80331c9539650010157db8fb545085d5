@@ -1,0 +1,42 @@
+package matrixPrograms;
+
+import java.util.Scanner;
+
+class Transpose{
+	
+	public static void MatrixRead(int[][] a) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter matrix a:");
+		
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length;j++) {
+				System.out.println("Enter : "+i+j);
+				a[i][j]=sc.nextInt();
+			}
+		}
+		}
+	
+	public static int[][] transposeM(int[][] a){
+		int[][] b=new int[3][3];
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length;i++) {
+				b[i][j]=a[j][i];
+			}
+		}
+		return b;
+	}
+	
+	public static void  MatrixWrite(int[][] b){
+		for(int i=0;i<b.length;i++) {
+			for(int j=0;j<b[i].length;j++) {
+				System.out.print(b[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+public class MatrixTransposeMatrix {
+	public static void main(String[] args) {
+        
+	}
+}

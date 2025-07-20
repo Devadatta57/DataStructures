@@ -1,0 +1,32 @@
+package ArrayPrograms2;
+
+import java.util.Arrays;
+
+class ArrayD{
+	public static int[] ArrayD(int[] a,int loc) {
+		
+		int[] b=new int[a.length-1];
+		int index=0;
+		if(loc>a.length) {
+			return b;
+		}
+		else {
+		for(int i=0;i<loc;i++) {
+			b[index++]=a[i];
+		}
+		for(int j=loc+1;j<a.length;j++) {
+			b[index++]=a[j];
+		}
+		return b;
+		}
+	}
+}
+public class DeletingAnELeAtGivenPos {
+	public static void main(String[] args) {
+   int[] c= ArrayD.ArrayD(new int[] {12,34,23,121},7);
+   for(int i=0;i<c.length;i++) {
+	   System.out.print(c[i]+" ");
+   }
+	
+	}
+}

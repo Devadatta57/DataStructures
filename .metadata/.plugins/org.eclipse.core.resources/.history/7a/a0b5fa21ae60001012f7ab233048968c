@@ -1,0 +1,21 @@
+package com.recursion;
+
+class ReplaceChar{
+	public static String repChar(String s,int i) {
+		if(i<0) {
+			return "";
+		}
+//		if(s.charAt(i)=='x') {
+//			return  repChar(s, i-1)+"y";
+//		}
+		else {
+			return s.charAt(i)+repChar(s, i-1);
+		}
+	}
+}
+public class ReplaceOldCharWithNewCHar {
+	public static void main(String[] args) {  
+		String s="codex";
+      System.out.println(ReplaceChar.repChar(s,s.length()-1));
+	}
+}

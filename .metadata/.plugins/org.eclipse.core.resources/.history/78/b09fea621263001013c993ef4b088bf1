@@ -1,0 +1,30 @@
+package ArraysPrograms;
+
+import java.util.Arrays;
+
+class ArrayWav{
+	public static void  smallHigh(int[] a) {
+		
+		for(int i=1;i<=a.length/2;i++) {
+			int temp=a[i];
+			a[i]=a[i+1];
+			a[i+1]=temp;
+		}
+		
+		for(int i=(a.length/2)+1;i<=a.length/2;i++) {
+			int temp=a[i];
+			a[i]=a[i+1];
+			a[i+1]=temp;
+		}
+    }
+}
+public class ArrayWave {
+	public static void main(String[] args) {
+		 int a[]=new int[5];
+	     a=new int[] {1,2,3,4,5};
+	     
+	     Arrays.sort(a);
+	     
+	     ArrayWav.smallHigh(a);
+	}
+}

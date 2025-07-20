@@ -1,0 +1,18 @@
+package ArraysPrograms;
+
+import java.util.Arrays;
+
+class ArraySortString{
+
+	public static int[] sortAscMeth2(int[] a) {
+	   Arrays.sort(a);
+	   return a;
+	}
+}
+public class ArraySortingString {
+	public static void main(String[] args) {
+    
+    
+     
+	}
+}

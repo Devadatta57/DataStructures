@@ -1,0 +1,22 @@
+package ArraysPrograms;
+
+class ArraySorti{
+	public static void sortAsc(int[] a) {
+		for(int i=0;i<a.length;i++) {
+			for(int j=i+1;j<a.length;j++) {
+				if(a[i]>a[j]) {
+					int temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}
+			}
+		}
+	}
+}
+public class ArraySortingAsc {
+	public static void main(String[] args) {
+     int a[]=new int[5];
+     ArraySorti.sortAsc(a);
+		
+	}
+}

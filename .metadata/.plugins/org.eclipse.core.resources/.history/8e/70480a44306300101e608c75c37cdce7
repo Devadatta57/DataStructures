@@ -1,0 +1,7 @@
+package ArraysProgramsSearching;
+
+public class LinearySearch {
+	public static void main(String[] args) {
+
+	}
+}

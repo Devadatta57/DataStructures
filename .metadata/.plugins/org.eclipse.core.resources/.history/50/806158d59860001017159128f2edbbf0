@@ -1,0 +1,26 @@
+package com.recursion;
+
+class CountVC{
+	public static int countvc(String s,int index) {
+		if(index<0) {
+			return 0;
+		}
+		if(s.charAt(index)=='a'|| s.charAt(index)=='e' || s.charAt(index)=='i' || s.charAt(index)=='o' || s.charAt(index)=='u') {
+			return 1+countvc(s,index-1);
+		}
+		else {
+			return countvc(s, index-1);
+		}
+	}
+}
+public class countOfVowelsAndCons {
+
+	public static void main(String[] args) {
+		String s="abbcde";
+		int res=CountVC.countvc(s,s.length()-1);
+		System.out.println(res);
+
+
+	}
+
+}

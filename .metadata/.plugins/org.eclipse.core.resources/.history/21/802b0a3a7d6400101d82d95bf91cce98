@@ -1,0 +1,29 @@
+package ArrayPrograms2;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+class ArrayD{
+	
+public static int[] DeleteAll(int[] a) {
+       int[] b=new int[0];
+		return b;
+}
+public class DeletingAll {
+	public static void main(String[] args) {
+   Scanner sc=new Scanner(System.in);
+  
+   int[] a={12,34,23,121};
+ 
+	   int[] c=ArrayD.DeleteAll(a);
+	 
+	   for(int i=0;i<c.length;i++) {
+		   System.out.print(c[i]+" ");
+	   }
+   }
+
+   
+   
+	
+	}
+}

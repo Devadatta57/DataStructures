@@ -1,0 +1,17 @@
+package com.recursion;
+
+class PowerC{
+	public static int PowerN(int a,int b) {
+		if(b==0){
+			return 0;
+		}
+		else {
+			return a* PowerN(a,b-1);
+		}
+	}
+}
+public class PowerCalcu {
+   public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,10 @@
+package ArrayPrograms2;
+
+public class UpdatingElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

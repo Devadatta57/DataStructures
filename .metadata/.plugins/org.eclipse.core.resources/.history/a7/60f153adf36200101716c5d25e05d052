@@ -1,0 +1,31 @@
+package ArraysPrograms;
+
+import java.util.Arrays;
+
+//class ArraySHAdj{
+//	public static void smallHigh(int[] a,int low,int high) {
+//		for(int i=0;i<=a.length;i++) {
+//		while(low<=high) {
+//			System.out.println(a[i]);
+//			low++;
+//			high--;
+//		}
+//	}
+//}
+//}
+public class ArraySmallHighestAdj {
+	public static void main(String[] args) {
+		 int a[]=new int[5];
+	     a=new int[] {12,42,121,34};
+	     
+	     Arrays.sort(a);
+	     
+	     for(int i=0;i<a.length;i++) {
+	    	 System.out.println(a[i]);
+	     }
+	     
+	     int low=a[0];
+	     int high=a[a.length-1];
+	    // ArraySHAdj.smallHigh(a,low,high);
+	}
+}

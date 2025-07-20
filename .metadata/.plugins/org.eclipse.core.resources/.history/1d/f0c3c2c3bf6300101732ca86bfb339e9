@@ -1,0 +1,42 @@
+package ArraysProgramsSearching;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+class BinaryV5{
+	public static int binary(int[] a,int low,int high,int key){
+		while(low<=high) {
+			int mid=(low+high)/2;
+		if(a[mid]==key) {
+			return mid;
+		}
+		else if(a[mid]<key){
+			low=mid+1;
+		}
+		else {
+			high=mid-1;
+		}
+		
+		}
+		return -1;
+	} 
+}
+public class BinarySearchVersion5 {
+	public static void main(String[] args) {
+	int[] a=new int[7];
+	a=new int[] {12,45,54,43,23,67};
+	
+       Arrays.sort(a);
+       for(int i=0;i<a.length;i++) {
+       System.out.print(a[i]+" ");
+       }
+       Scanner sc=new Scanner(System.in);
+       System.out.print("enter start location");
+       int start=sc.nextInt();
+       System.out.print("enter end location");
+       int end=sc.nextInt();
+
+      System.out.println(BinaryV5.binary(a,0,(a.length-1)/2,23));
+	
+	}
+}

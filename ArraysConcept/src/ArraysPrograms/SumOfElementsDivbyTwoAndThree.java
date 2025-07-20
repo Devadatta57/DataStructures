@@ -1,0 +1,30 @@
+package ArraysPrograms;
+import java.util.Scanner;
+
+class SumTT{
+	public static void read(int[] a) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter element: ");
+		for(int i=0;i<a.length;i++) {
+			a[i]=sc.nextInt();
+		}
+	}
+	public static int sum(int[] a) {
+		int sum=0;
+		for(int i=0;i<a.length;i++) {
+			//System.out.println(a[i]);
+			 if(a[i]%2==0 && a[i]%3==0) {
+			   sum=sum+a[i];
+			 }
+		}
+		return sum;
+	}
+}
+public class SumOfElementsDivbyTwoAndThree {
+	public static void main(String[] args) {
+		int a[]=new int[5];
+		SumTT.read(a);
+		System.out.println(SumTT.sum(a));
+
+	}
+}
