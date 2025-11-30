@@ -1,7 +1,7 @@
 package ArraysPrograms;
 
 import java.util.Arrays;
-
+//Arrays.toString() is used to print all the contents of an array instead of its memory address.
 class ArraySHAdj{
 	public static void smallHigh(int[] a,int low,int high) {
 		
