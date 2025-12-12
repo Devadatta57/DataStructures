@@ -111,32 +111,25 @@ class LinkLi{
     }
     
     
-    void deleteAllOccElement(int data) {
-    	if(head==null) {
-    		System.out.println("empty list");
-    		return;
-    	}
-    	
-    	Node temp=head;
-
-    	
-    	if(temp.data==data) {
-    		size--;
-    		head=temp.next;
-    	}
-    	
-    	while(temp.next!=null) {
-    		
-    		if(temp.next.data==data) {
-    			size--;
-    			temp.next=temp.next.next;
-    			
-    		}
-    		if(temp.next!=null) {
-    		temp=temp.next;
-    		}
-    	}
-    }
+    public void deleteAllOcc(int data) {
+	
+	while(head!=null && head.data==data) {
+		head=head.next;
+	}
+	if(head==null) {
+		return;
+	}
+	Node currNode=head;
+	while(currNode.next!=null) {
+		if(currNode.next.data==data) {
+			currNode.next=currNode.next.next;
+		}
+		else {
+		 currNode=currNode.next;
+		}
+	}
+	
+}
     
     //my code
 //    void deleteAtPos(int pos) {
@@ -217,7 +210,7 @@ public class LinkedListDelete {
         l.addLast(30);
         l.Print();
         
-       // l.deleteAllOccElement(10);
+        l.deleteAllOcc(10);
         l.deleteAtPos(3);
         System.out.println();
      
