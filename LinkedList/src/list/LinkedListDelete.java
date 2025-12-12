@@ -164,7 +164,7 @@ class LinkLi{
 //    }
 //        
     
-    
+  //  pos = index to delete
   void deleteAtPos(int pos) {
   	   int i=0;
   	   if(head==null) {
