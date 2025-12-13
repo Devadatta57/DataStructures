@@ -94,19 +94,35 @@ class SlB{
     	 return currNode.data;
     	 
      }
+	     int nthNodeFromENd(int n) {
+     	int count=1;
+     	 if(n<=0 || n>getSize()) {
+     		 return -1;
+     	 }
+     	 n=getSize()-n+1;//just formula if given n to calculate from end from begin calculating it pos and again doing to find that pos data same as it is as like begin formula xtra needed
+     	 Node currNode=head;
+ 		// System.out.println(currNode.data);
+     	 while(currNode!=null && count<n) {
+     		 currNode=currNode.next;
+     		// System.out.println(currNode.data);
+     		 count++;
+     	 }
+     	 return currNode.data;
+     	 
+      }
      
-     int nthNodefromLast(int index) {
-    	 if(size!=0 && getSize()<index) 
-    		 return -1;
+     // int nthNodefromLast(int index) {
+    	//  if(size!=0 && getSize()<index) 
+    	// 	 return -1;
     	 
-    	 int n=getSize();
+    	//  int n=getSize();
     	 
-    	 n=n-index+1;
-    	 System.out.println(n);
-    	return  nthNodeFromBegin(n);
+    	//  n=n-index+1;
+    	//  System.out.println(n);
+    	// return  nthNodeFromBegin(n);
     	
     	 
-     }
+     // }
 //     int nthNodeFromEnd(int index) {
 //    	    int size = getSize();
 //    	    int sindex;
