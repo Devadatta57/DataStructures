@@ -1,5 +1,5 @@
 package circlists;
-
+//tail is last node,tail.next is head
 class CirLis1{
 	Node tail;
 	int size=0;
