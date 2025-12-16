@@ -61,27 +61,20 @@ class DoubleL7{
 		}
 	
      void reverse() {
-		if(head==null) {
-			System.out.println("empty list");
-		    return;
-		}
+		Node prev=null;
+		Node next=null;
 		Node currNode=head;
-		Node temp1=null;
-		Node temp2=null;
 		while(currNode!=null) {
-			temp2=new Node(currNode.data,null,null);
-			temp2.next=temp1;
-			if (temp1 != null) {
-			temp1.prev=temp2;
-			}
-			temp1=temp2;
+			next=currNode.next;
 			
-			currNode=currNode.next;
+			currNode.next=prev;
+			currNode.prev=next;
 			
+			prev=currNode;
+			currNode=next;			
 		}
-		head=temp1;
-	}
-
+		head=prev;
+	 }
   
 }
 public class Reverse {
