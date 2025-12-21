@@ -3,13 +3,13 @@ package stacksprograms;
 import java.util.Stack;
 
 class StackInsert{
-	static void InsertAtPos(Stack<Integer> ss,int value) {
+	static void InsertAsc(Stack<Integer> ss,int value) {
 	    if(ss.isEmpty() || value>ss.peek()) {
 	    	ss.push(value);
 	    }
 	    else {
 	    	int temp=ss.pop();
-	    	InsertAtPos(ss, value);
+	    	InsertAsc(ss, value);
 	    	ss.push(temp);
 	    }
 	}
@@ -19,7 +19,7 @@ class StackInsert{
 		if(ss.isEmpty()==false) {
 		   temp=ss.pop();
 		   SortStack(ss);
-		   InsertAtPos(ss, temp);
+		   InsertAsc(ss, temp);
 		}
 	}
 	
@@ -57,7 +57,7 @@ public class stackInsertingAsc {
        s.push(89);
        s.push(4);
        //System.out.println(s);
-     //  d.InsertAtPos(s,1);
+     //  d.InsertAsc(s,1);
      //  d.SortStack(s);
        for (int i = s.size() - 1; i >= 0; i--) {
     	    System.out.print(s.get(i) + " ");
