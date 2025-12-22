@@ -1,7 +1,8 @@
 package stacksprograms;
 
 import java.util.Stack;
-
+//Scan the infix expression left to right, add operands directly to output, use a stack to temporarily hold operators 
+//and parentheses, pop operators based on precedence and parentheses, and finally empty the stack to form the postfix expression.
 class Exp{
 	static int precedence(char ch) {
 		if(ch=='*' || ch=='/') {
