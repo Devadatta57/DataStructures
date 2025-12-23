@@ -8,33 +8,28 @@ class Postfix{
 		Stack<Integer> st= new Stack<Integer>(); 
 		for(char ch:c) {
 			if(Character.isDigit(ch)) {
-				st.push(ch-'0');
+				st.push(ch-'0');//to convert char to numeric value ch-'0';
 			}else {
+				int v1=p.pop();
+				int v2=p.pop();
+			
 				switch(ch) {
-				case '+':int v1=st.pop();
-				         int v2=st.pop();
-				         st.push(v2+v1);
-				         break;
-				         
-				case '-': v1=st.pop();
-		                  v2=st.pop();
-		                  st.push(v2-v1);
-		                  break;
-				
-				case '*': v1=st.pop();
-		                  v2=st.pop();
-		                  st.push(v2*v1);
-		                   break;
-				
-				case '/': v1=st.pop();
-		                  v2=st.pop();
-		                  st.push(v2/v1);
-		                  break;
+				case '*':
+					    st.push(v2*v1);
+					    break;
+				case '/':
+					    st.push(v2/v1);
+					    break;
+				case '+':
+					     st.push(v2+v1);
+					     break;
+				case '-':	
+					     st.push(v2-v1);
+					     break;
 				}
 			}
-			
-		}
-		return st.peek();
+     	}
+		return st.pop();
 	}
 }
 public class PostfixEval {
