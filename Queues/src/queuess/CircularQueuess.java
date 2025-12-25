@@ -130,8 +130,8 @@ public class CircularQueuess {
 // 			   return;
 // 		}
 		
-// 		for(int i=0;i<count;i++) {
-// 			System.out.print(a[(front+i)%size]+" ");
+// 		for(int i=0;i<count;i++) {//count=no of elements in  array size 
+// 			System.out.print(a[(front+i)%size]+" ");// displaying  (count- var that stores elements in n array size ) elements from front to rear 
 // 		}
 		
 		
