@@ -76,3 +76,87 @@ public class CircularQueuess {
 		c.display();
 	}
 }
+//package com.queue;
+
+// class CircularQ{
+// 	int size=0;
+// 	int[] a;
+// 	int count=0;
+	
+// 	public CircularQ(int size) {
+// 		this.size=size;
+// 		a=new int[size];
+// 	}
+	
+// 	int rear=-1,front=-1;
+	
+// 	public void add(int data) {
+// 		if(count==size) {
+// 			System.out.println("size full");
+// 			return;
+// 		}
+// 		if(rear==-1) {
+// 			rear=front=0;
+// 			a[rear]=data;
+// 			count++;
+// 		}
+// 		else {
+// 		rear=(rear+1)%size;
+// 		a[rear]=data;
+// 		count++;
+// 		}
+// 	}
+	
+// 	public void delete() {
+// 	   if(front==-1) {
+// 		   System.out.println("empty");
+// 		   return;
+// 	   }
+// 	   if(front==rear) {
+		
+// 		   front=rear=-1;
+// 		   count--;
+// 		   return;
+// 	   }
+
+// 	   front=(front+1)%size;
+// 	   count--;
+	   
+// 	}
+	
+// 	void display() {
+// 		if(count==0) {
+// 			 System.out.println("empty");
+// 			   return;
+// 		}
+		
+// 		for(int i=0;i<count;i++) {
+// 			System.out.print(a[(front+i)%size]+" ");
+// 		}
+		
+		
+// 	}
+	
+// }
+// public class CircularQueues {
+// 	public static void main(String[] args) {
+//       CircularQ c= new CircularQ(5);
+//       c.add(34);
+//       c.add(12);
+//       c.add(89);
+//       c.add(23);
+//       c.add(78);
+//       c.display();
+//       System.out.println();
+//       c.delete();
+//       c.add(99);
+     
+     
+//       c.display();
+//      c.delete();
+//      c.display();
+//       System.out.println();
+     
+// 	}
+// }
+
