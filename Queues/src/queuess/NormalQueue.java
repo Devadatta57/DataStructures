@@ -1,64 +1,67 @@
-package queuess;
+package com.queue;
 
-import javax.swing.text.DefaultEditorKit.InsertBreakAction;
+class QueuesAddDelete {
+    int size;
+    int[] a;
+    int rear = -1;
+    int front = -1;
 
-class QueueAddDelDis{
-	int rear=-1,front=-1,size=5;
-	int[] Q;
-	public QueueAddDelDis() {
-		Q =new int[size];
-	}
-	
-	public void InsertAtRear(int data) {
-	   	if(rear==size) {
-	   		System.out.println("full queue");
-	   		return;
-	   	}
-	   	if(rear==front) { 
-	   		rear=front=0;
-	   	}
-	   	Q[rear++]=data;
-	}
-	
-	public void Delete() {
-		if(front==-1 || front>=Q.length) {
-			System.out.println("nothing to delete");
-			return;
-		}
-		 if(front==rear) {
-				front=rear=-1;
-				return;
-		}
-		System.out.println(Q[front]);
-		front++;
-	   
-		
-	}
-	
-	public void Display() {
-		if(rear==front) {
-			System.out.println("nothing to display");
-		}
-	  for(int i=front;i<rear;i++) {
-		  System.out.print(Q[i]+" ");
-	  }
-	}
-	
+    QueuesAddDelete(int size) {
+        this.size = size;
+        a = new int[size];
+    }
+
+    public void add(int data) {
+        if (rear == size) {
+            System.out.println("Queue full");
+            return;
+        }
+
+        if (front == -1) {   // ✅ correct empty check
+            front = rear = 0;
+        }
+
+        a[rear++] = data;
+    }
+
+    public void delete() {
+        if (front == -1) {   // ✅ correct empty check
+            System.out.println("Queue empty");
+            return;
+        }
+
+        System.out.println("Deleted: " + a[front]);
+        front++;
+
+        if (front == rear) { // queue becomes empty
+            front = rear = -1;
+        }
+    }
+
+    public void display() {
+        if (front == -1) {
+            System.out.println("empty queue");
+            return;
+        }
+
+        for (int i = front; i < rear; i++) {//    front--12345---rear//after last insetion rear++ means rear reaches size so i<rear means i= front means from 0 to 4 not 5
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
 }
 
-public class NormalQueue {
-	public static void main(String[] args) {
-		QueueAddDelDis q= new QueueAddDelDis();
+public class NormalQueues {
+    public static void main(String[] args) {
+        QueuesAddDelete q = new QueuesAddDelete(5);
 
-		q.InsertAtRear(12);
-		q.InsertAtRear(72);
-		q.InsertAtRear(90);
-		q.InsertAtRear(78);
-		q.InsertAtRear(77);
-		
-	
-	
-	q.Display();
+        q.add(34);
+        q.add(56);
+        q.add(67);
+        q.add(68);
+        q.add(90);
+        q.add(578); // Queue full
 
-	}
+        q.display();
+    }
 }
