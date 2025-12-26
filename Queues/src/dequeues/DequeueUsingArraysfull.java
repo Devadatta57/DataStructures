@@ -1,4 +1,12 @@
 package dequeues;
+//case:1 when front=0 and rear=size-1
+//case:2 when front=1 and rear=0
+//why cant we use same logic for insertatfront as insertatrear ?
+//becoz in insertionAtRear rear means works clockwise we add  data nxt to rear
+//insertionatRear means anticlockwise we cant add data nxt ,we should data back to it so we add at index 0 then jump to size-1 and add then move step back until it reaches to index 0 position 
+//deletionAtRear means rear at index 0 and front at index 1 so delete at index 0 first then jump to size-1 index and move forward
+//display logic diff for both cases 
+
 
 class DequeueArray{
 	int front,rear,size=5;
