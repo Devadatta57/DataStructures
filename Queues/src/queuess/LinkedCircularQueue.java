@@ -17,13 +17,14 @@ class LinkedCir{
 	public void Insert(int data) {
 	 Node newNode = new Node(data,null);
 		if(front==null) {
-		   front=newNode;
+		   front=rear=newNode;
+			rear.next=front;
 	    }
 		else {
-	      rear.next=newNode;      	 
+	      rear.next=newNode;   
+			rear=newNode;
+			rear.next=front;
 	    }
-		rear=newNode;
-		rear.next=front;
 		size++;
 		
 	}
