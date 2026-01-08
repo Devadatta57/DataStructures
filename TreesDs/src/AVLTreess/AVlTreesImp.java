@@ -56,11 +56,11 @@ class AVLTrees{
     		 return LeftRotation(node);
     	 }
     	 if(bf>1 && value>node.left.data){//LR
-    		 node.left=LeftRotation(node);
+    		 node.left=LeftRotation(node.left);
     		 return rightRotation(node);
     	 }
     	 if(bf<-1 &&  value<node.right.data) {//RL
-    		 node.right=rightRotation(node);
+    		 node.right=rightRotation(node.right);
     		 return LeftRotation(node);
     	 }
     	 
