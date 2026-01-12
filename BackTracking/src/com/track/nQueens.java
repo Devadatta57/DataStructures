@@ -36,12 +36,12 @@ class Queens{
 			 if(board[i][col]=='Q')
 				 return false;
 		 }
-		 //diagonal right-up
+		 //diagonal left-up
 		 for(int i=row-1,j=col-1;i>=0 && j>=0;i--,j--) {
 			 if(board[i][j]=='Q')
 				 return false;
 		 }
-		 //diagonal left-up
+		 //diagonal right-up
 		 for(int i=row-1,j=col+1;i>=0 && j<board.length;i--,j++) {
 			 if(board[i][j]=='Q')
 				 return false;
