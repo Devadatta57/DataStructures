@@ -18,17 +18,17 @@ class SolvingSudoku{
 					    if(isSafe(board,row,col,num)){
 					    	board[row][col]=num;					
 					           if(SolveSudoku(board)) {//recursion
-						          return true;
+						          return true;//if recursion returns true,returns true to its called recursion back cell else backtrack to previous cell and keep 0 
 					           }
 					      board[row][col]=0;
 			             }
 			       
 			        }
-			   return false;
+			   return false;//if no number fits after trying all returns false to previous cell which called this recursion
 		}
 	  }
 	}
-     return true;
+     return true;//rteurns final output whether sudoku can be solved or not
 	
 	}
 
@@ -48,8 +48,12 @@ class SolvingSudoku{
 		}
 		
 		//for grid check
-		 int startRow = row - row % 3;
-	     int startCol = col - col % 3;
+		//why %3 to find the row index position in grid which 3-3 grid if 4-4 grid %4 likethat normal sudoku 3-3- grid
+		// row%3 from grid start that row index where(eg index is from grid start 2-index ,1-index,0 index(grid start point))
+		//row-row%3 gives  the row which is located at somewhere come to starting index of 3-3grid and loop until grid ends
+		int startRow = row - row % 3; // %3 gives position inside 3-row block, subtract to reach block start
+        int startCol = col - col % 3; // same logic for column (3-column block)
+ 
 	     for(int row1=startRow;row1<startRow+3;row1++) {
 	    	  for(int col1=startCol;col1<startCol+3;col1++) {
 	 	    	 if(board[row1][col1]==num) {
