@@ -1,7 +1,9 @@
 package com.graphs;
 
 import java.util.LinkedList;
-
+//No parameter → adj means the current object (this.adj)
+//Parameter passed → must use obj.adj to access that graph ✅ so here in cycle detcection method we udes obj to access (   LinkedList<Edge> temp=g.adj.get(curr);)
+//in print we dint pass any graph so it works on graph whic is already there no need to craete obj to access current list in the graph used
 class Graph7{
 	static class Edge{
 		int dest;
