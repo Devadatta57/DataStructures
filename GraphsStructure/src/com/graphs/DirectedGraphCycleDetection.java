@@ -1,7 +1,8 @@
 package com.graphs;
 
 import java.util.LinkedList;
-
+//visited is used to tell all nodes reached once,so in every  dfs recursion  it is same so currents dfs recursion path shouldnt checked with previous visied path nodes ok 
+//restack used to check in our path in every dfs recursion we haved visited once,if again we reach same then cycyle found so eestack used to check cycle.
 class Graph8{
 	static class Edge{
 		int dest;
