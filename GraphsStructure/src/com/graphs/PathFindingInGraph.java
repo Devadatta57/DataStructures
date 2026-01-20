@@ -53,7 +53,25 @@ class Graph4{
 		
 	}
 
-public class PathFindingInGraph {
+//  boolean PathFromSrctoDest(int src,int dest,boolean[] visited) {
+//     	if(src==dest) {
+//     		return true;
+//     	}
+    	
+//     	visited[src]=true;
+//     	LinkedList<Edge> temp=adj.get(src);
+    	
+//     	for(Edge e:temp) {
+//     		if(!visited[e.dest]) {
+//     			if(PathFromSrctoDest(e.dest, dest, visited)) {
+//     				return true;//we have to return the recursive func result  compulsory
+//     			}
+//     		}
+//     	}
+// 		return false;
+//     }
+
+ public class PathFindingInGraph {
 	public static void main(String[] args) {
        int v=6;
        Graph4 g=new Graph4(v);
